@@ -419,7 +419,7 @@ class Cursor implements \Iterator, \Countable, \arrayaccess {
     return $this->indexRight;
   }
 
-  public function rewind() {
+  public function rewind(): void {
     $this->position = $this->indexLeft;
   }
 
