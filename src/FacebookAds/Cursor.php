@@ -468,7 +468,7 @@ class Cursor implements \Iterator, \Countable, \arrayaccess {
     }
   }
 
-  public function next() {
+  public function next(): void {
     if ($this->position == $this->getIndexRight()) {
       if ($this->getUseImplicitFetch()) {
         $this->fetchAfter();
